@@ -11,7 +11,7 @@ import numpy.testing as npt
 ])
 def test_working_bisction(f, x0, x1, eps, k, ans):
     from nonlinear_solvers.solvers import bisection
-    npt.assert_almost_equal(bisection(f, x0, x1, eps, k), ans)
+    npt.assert_almost_equal(bisection(f, x0, x1, eps, k), ans, decimal=6)
 
 
 @pytest.mark.parametrize("f, x0, x1, eps, k, ans", [
