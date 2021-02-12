@@ -17,7 +17,7 @@ except ImportError:
 ])
 def test_working_newton(f, g, x0, eps, k, ans):
     from nonlinear_solvers.solvers import newton_raphson
-    npt.assert_almost_equal(newton_raphson(f, g, x0, eps, k), ans)
+    npt.assert_almost_equal(newton_raphson(f, g, x0, eps, k), ans, decimal=6)
 
 
 @pytest.mark.parametrize("f, g, x0, eps, k", [
