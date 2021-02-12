@@ -64,7 +64,7 @@ def bisection(f, x_0, x_1, eps=1.0e-5, max_its=20):
     raise NotImplementedError
 
 
-def solve(f, df, x_0, x_1, eps=1.0-5, max_its_n=20, max_its_b=20):
+def solve(f, df, x_0, x_1, eps=1.0e-5, max_its_n=20, max_its_b=20):
     """Solve a nonlinear equation.
 
     solve f(x) == 0 using Newton-Raphson iteration, falling back to bisection
